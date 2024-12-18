@@ -22,10 +22,10 @@ export default function Home() {
     <>
       <Stack.Screen options={{ title: 'Home' }} />
       <Container>
-        <Text>{JSON.stringify(data)}</Text>
+        <Text className="text-black dark:text-white">{JSON.stringify(data)}</Text>
         <Link href={{ pathname: '/details', params: { name: 'Aman' } }} asChild>
-          <Pressable className="flex w-full items-center justify-center rounded-lg bg-black p-5">
-            <Text className="text-white">Go to details</Text>
+          <Pressable className="flex w-full items-center justify-center rounded-lg border border-pink-600 bg-black p-2 dark:bg-white">
+            <Text className="text-white dark:text-black">Go to details</Text>
           </Pressable>
         </Link>
       </Container>
